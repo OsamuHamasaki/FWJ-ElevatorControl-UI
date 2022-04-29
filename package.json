@@ -1,0 +1,27 @@
+{
+  "name": "fwj-lampcontrol-ui",
+  "version": "1.0.0",
+  "description": "User interface for LampControl exercise.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",  
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OsamuHamasaki/FWJ-LampControl-UI.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Electron"
+  ],
+  "author": "Osamu Hamasaki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OsamuHamasaki/FWJ-LampControl-UI/issues"
+  },
+  "homepage": "https://github.com/OsamuHamasaki/FWJ-LampControl-UI#readme",
+  "devDependencies": {
+    "electron": "^13.2.3"
+  }
+}

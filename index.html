@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+        <title>Elevator Control</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="UpstairDiv">
+			<p>
+				<canvas id="UpstairCallButton" width=50 height=50></canvas>
+				upstaircallbutton
+			</p>
+        </div>
+        <div id="CageDiv">
+			<p>
+				<canvas id="UpstairRequestButton" width=50 height=50></canvas>
+				upstairRequestButton
+			</p>
+			<p>
+				<canvas id="DownstairRequestButton" width=50 height=50></canvas>
+				downstairRequestButton
+			</p>
+			<canvas id="LiftUpstairSensor" width=50 height=50></canvas>
+			<p>
+				<canvas id="Lift" width=50 height=100></canvas>
+				Lift
+				<canvas id="DoorCloseSensor" width=50 height=50></canvas>
+				<canvas id="Door" width=200 height=50></canvas>
+				<canvas id="DoorOpenSensor" width=50 height=50></canvas>
+				Door				
+			</p>
+			<canvas id="LiftDownstairSensor" width=50 height=50></canvas>
+        </div>
+        <div id="DownstairDiv">
+			<p>
+				<canvas id="DownstairCallButton" width=50 height=50></canvas>
+				downstairCallbutton
+			</p>
+        </div>
+
+        <script src="renderer.js"></script>
+    </body>
+</html>
+
