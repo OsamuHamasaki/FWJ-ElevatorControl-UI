@@ -113,7 +113,7 @@ class ElevatorIO {
 	updateDoorStateForOpen() {
 		this.doorCloseSensorOff()
 		if (this._outputState.doorRatio < 1000) {
-			this._outputState.doorRatio++
+			this._outputState.doorRatio += 4;
 		}
 		if (this._outputState.doorRatio === 1000) {
 			this.doorOpenSensorOn()
@@ -123,7 +123,7 @@ class ElevatorIO {
 	updateDoorStateForClose() {
 		this.doorOpenSensorOff()
 		if (this._outputState.doorRatio > 0) {
-			this._outputState.doorRatio--
+			this._outputState.doorRatio -= 4;
 		}
 		if (this._outputState.doorRatio === 0) {
 			this.doorCloseSensorOn()
@@ -133,7 +133,7 @@ class ElevatorIO {
 	updateLiftStateForUp() {
 		this.liftDownstairSensorOff()
 		if (this._outputState.liftRatio < 1000) {
-			this._outputState.liftRatio++
+			this._outputState.liftRatio += 4;
 		}
 		if (this._outputState.liftRatio === 1000) {
 			this.liftUpstairSensorOn()
@@ -143,7 +143,7 @@ class ElevatorIO {
 	updateLiftStateForDown() {
 		this.liftUpstairSensorOff()
 		if (this._outputState.liftRatio > 0) {
-			this._outputState.liftRatio--
+			this._outputState.liftRatio -= 4;
 		}
 		if (this._outputState.liftRatio === 0) {
 			this.liftDownstairSensorOn()
